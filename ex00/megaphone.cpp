@@ -1,15 +1,5 @@
 #include <iostream>
 #include <string>
-#include <algorithm>
-
-bool isAlphaNumeric(const std::string &str)
-{
-    auto it = std::find_if(str.begin(), str.end(), [](char const &c) {
-            return !isalnum(c);
-        });
- 
-    return it == str.end();
-}
 
 void shout(std::string str)
 {
@@ -35,10 +25,7 @@ int main(int ac, char **av)
     {
         while (av[i])
         {
-            if (isAlphaNumeric(av[i]) && i != 1)
-                str.append(", ");
-            else
-                str.append(" ");
+            str.append(" ");
             str.append(av[i]);
             i++;
         }
