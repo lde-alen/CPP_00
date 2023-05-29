@@ -5,7 +5,7 @@ void shout(std::string str)
 {
     for(int x = 0; x < str.length(); x++)
         std::cout << char(toupper(str[x]));
-        std::cout << '\n';
+    std::cout << '\n';
 }
 
 int main(int ac, char **av)
