@@ -2,10 +2,10 @@ NAME		= 	phonebook
 
 CXX			= 	c++ -Wall -Wextra -Werror -std=c++98
 
-SRCS		=	contact.cpp			\
-				phonebook.cpp		\
-				phonebook_utils.cpp	\
-				main.cpp			\
+SRCS		=	Contact.cpp			\
+				Phonebook.cpp		\
+				PhonebookUtils.cpp	\
+				Main.cpp			\
 
 OBJS		= 	$(SRCS:.cpp=.o)
 
