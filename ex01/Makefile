@@ -1,5 +1,7 @@
 NAME		= 	phonebook
 
+CXX			= 	c++ -Wall -Wextra -Werror -std=c++98
+
 SRCS		=	contact.cpp			\
 				phonebook.cpp		\
 				phonebook_utils.cpp	\
@@ -9,12 +11,8 @@ OBJS		= 	$(SRCS:.cpp=.o)
 
 RM			= 	rm -f
 
-FLAGS		= 	-Wall -Wextra -Werror -std=c++98
-
-COMPILER	= 	c++
-
 $(NAME)		:	${OBJS}
-				${COMPILER} ${FLAGS} $(OBJS) -o $(NAME)
+				${CXX} $(OBJS) -o $(NAME)
 
 all			:	$(NAME)
     

@@ -6,9 +6,7 @@ OBJS		= 	$(SRCS:.cpp=.o)
 
 RM			= 	rm -f
 
-FLAGS		= 	-Wall -Wextra -Werror -std=c++98
-
-COMPILER	= 	c++
+CXX			= 	c++ -Wall -Wextra -Werror -std=c++98
 
 $(NAME)		:	${OBJS}
 				${COMPILER} ${FLAGS} $(OBJS) -o $(NAME)

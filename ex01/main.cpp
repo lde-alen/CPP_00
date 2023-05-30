@@ -2,11 +2,6 @@
 
 int main(void)
 {
-    Phonebook   phonebook;
-
-    for (int i = 0; i < 8; i++)
-    {
-        phonebook.print(phonebook, i);
-    }
+    Phonebook   Phoneook;
     return (0);
 }

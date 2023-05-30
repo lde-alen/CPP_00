@@ -15,6 +15,7 @@ Phonebook::Phonebook(void)
 
 Phonebook::~Phonebook(void)
 {
+    
 }
 
 Contact Phonebook::get_contact(int i)
