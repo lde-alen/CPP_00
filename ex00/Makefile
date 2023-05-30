@@ -8,7 +8,7 @@ RM			= 	rm -f
 
 FLAGS		= 	-Wall -Wextra -Werror -std=c++98
 
-COMPILER	= 	clang++
+COMPILER	= 	c++
 
 $(NAME)		:	${OBJS}
 				${COMPILER} ${FLAGS} $(OBJS) -o $(NAME)
