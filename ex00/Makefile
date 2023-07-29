@@ -17,7 +17,7 @@ fclean		:	clean
 				$(RM) $(NAME)
     
 clean		:
-				$(RM) $(OBJS) $(OBJS_B)
+				$(RM) $(OBJS)
     
 re			:	fclean all
 
