@@ -25,7 +25,6 @@ int main(int ac, char **av)
 	{
 		while (av[i])
 		{
-			str.append(" ");
 			str.append(av[i]);
 			i++;
 		}
