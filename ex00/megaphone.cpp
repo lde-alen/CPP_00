@@ -3,7 +3,7 @@
 
 void shout(std::string str)
 {
-	for(int x = 0; x < str.length(); x++)
+	for(size_t x = 0; x < str.length(); x++)
 		std::cout << char(toupper(str[x]));
 	std::cout << '\n';
 }
